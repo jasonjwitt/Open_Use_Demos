@@ -88,5 +88,5 @@ Validation: Database Contents
 (3, 'Sales', 2785.0)
 (4, 'Refunds', 55.25)
 
-License:
+## 🔍 License
 MIT License — See LICENSE file for details.
