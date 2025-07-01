@@ -39,11 +39,12 @@ The script takes a **CSV file** as input and reads the data line by line. It per
 6. **API Request**: The transformed data is sent to an API endpoint using a POST request.
 
 ## Files
-| File                       | Purpose                                       |
-| -------------------------- | --------------------------------------------- |
+| File                        | Purpose                                        |
+| --------------------------  | ---------------------------------------------  |
 | `CSVtoAPI.py`               | Main demo script for CSV to API transformation |
-| `legacy_data.txt`           | Sample input CSV file for testing             |
-| `README.md`                 | Documentation for using the demo              |
+| `legacy_data.txt`           | Sample input CSV file for testing              |
+| `README.md`                 | Documentation for using the demo               |
+| 'expected_output.txt        | Expected output when run with given input file |
 
 ## How to Use:
 To run the script, use the following command:
