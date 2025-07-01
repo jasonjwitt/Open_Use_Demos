@@ -1,0 +1,14 @@
+Raw Input File Data:
+category,amount
+Sales,5320.00
+Refunds,140.50
+Sales,2785.00
+Refunds,55.25
+
+Data inserted into SQLite database.
+
+Validation: Database Contents
+(1, 'Sales', 5320.0)
+(2, 'Refunds', 140.5)
+(3, 'Sales', 2785.0)
+(4, 'Refunds', 55.25)

@@ -1,0 +1,5 @@
+category,amount
+Sales,5320.00
+Refunds,140.50
+Sales,2785.00
+Refunds,55.25
