@@ -45,4 +45,45 @@ For the purposes of this demo, **SQLite** was chosen due to the following reason
 ### ❓ Why Not MongoDB or PostgreSQL?
 While **MongoDB** and **PostgreSQL** are powerful databases used in production environments, they introduce more complexity in terms of setup, management, and performance optimization. This demo is focused on the transformation from legacy CSV data to a database, and using SQLite allows us to keep the process simple and focused.
 
-- **MongoDB**: It would be suitable fo
+- **MongoDB**: It would be suitable for a NoSQL database, but it's more commonly used for unstructured data, which doesn't fit this use case of structured tabular data.
+- **PostgreSQL**: While ideal for larger applications that require relational integrity and complex querying, PostgreSQL would introduce unnecessary overhead for this simple transformation demo.
+
+## 📦 Installation
+
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/your-username/CSVtoSQLite_Demo.git
+    ```
+
+2. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Run the script:
+    ```bash
+    python CSVtoSQLite.py
+    ```
+
+## ⚠️ Limitations
+- This is a simplified demo meant to showcase the basic transformation of legacy CSV data into an SQLite database. For full-scale solutions, more advanced features (e.g., error handling, data validation, multi-file support) would need to be incorporated.
+
+## 🔍 Expected Output
+
+After running the script, the SQLite database is populated with the contents of the CSV file. You can validate the output by comparing the database contents with the `expected_output.txt` file, which contains the expected format and values of the database.
+
+```text
+Raw Input File Data:
+category,amount
+Sales,5320.00
+Refunds,140.50
+Sales,2785.00
+Refunds,55.25
+
+Data inserted into SQLite database.
+
+Validation: Database Contents
+(1, 'Sales', 5320.0)
+(2, 'Refunds', 140.5)
+(3, 'Sales', 2785.0)
+(4, 'Refunds', 55.25)
